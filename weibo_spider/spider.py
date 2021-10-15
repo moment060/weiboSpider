@@ -379,7 +379,7 @@ def main(_):
         config = _get_config()
         config_util.validate_config(config)
         wb = Spider(config)
-        wb.start()  # 爬取微博信息
+        wb.start(5643234796)  # 爬取微博信息
     except Exception as e:
         logger.exception(e)
 
